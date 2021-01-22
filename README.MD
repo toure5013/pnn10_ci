@@ -11,8 +11,10 @@
 <code>
 
 <br>
+<br>
 
 ####  2. Require the module  ✅
+
 <code>
 const pnn10 =  require("pnn10_ci");
 </code>
@@ -60,21 +62,25 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 The number can be this format (and variations with . or , or - space)
 
+
+The number can be this format (and variations with . or , or - space)
+
 - xxxxxxxx
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
 <br>
+  
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
 <br>
+
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
   
 NB 📣 : all of this number ⬆️ work with space or . or - or , 
-
 
 <code>
     var user_fixe_number = "20 30 09 09";
@@ -99,16 +105,17 @@ The number can be this format (and variations with . or , or - space)
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
 <br>
+  
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
 <br>
+
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
   
 NB 📣 : all of this number ⬆️ work with space or . or - or , 
-
 
 <code>
     var unknow_type_number = "20 30 09 09";
@@ -120,8 +127,24 @@ var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_numb
 <br>
 console.log(converted_both_phone_number_fixe_number);
 </code>
-
 <br>
+<br>
+
+#### 4.Number type  : 
+- xxxxxxxx
+- +225xxxxxxxx
+- (+225)xxxxxxxx
+- (00225)xxxxxxxx
+<br>
+  
+- xx.xx.xx.xx
+- (+225)xx.xx.xx.xx
+- +225xx.xx.xx.xx
+<br>
+
+- xx xx xx xx
+- (+225)xx xx xx xx
+- +225xx xx xx xx
 <br>
 
 
