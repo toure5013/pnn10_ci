@@ -315,12 +315,15 @@ class Pnn10class {
             var is_fixe_number = regex_fixe_number.test(user_number_string);
             var final_result = ""
             if(is_fixe_number){
+                 // console.log("Numero valid  ✅  à  8️⃣  chiffre et de type fixe")
                  final_result = this.fixe_number(user_number_string);
             }else{
+                 // console.log("Numero valid  ✅  à  8️⃣  chiffre et de type mobile")
                 final_result = this.phone_number(user_number_string);
             }
             return final_result;
         }else{
+            // console.log("Ceci n'est pas un numéro ivoirien   ❌")
             return {
                 error: true,
                 message: "🛑  Le numéro " + user_number_string + ", n'est pas un numéro valid",
