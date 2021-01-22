@@ -1,5 +1,7 @@
 ## PNN10
 
+### Mobile phone number
+
 The number can be this format
 
 - xxxxxxxx
@@ -25,6 +27,8 @@ const pnn10 =  require("./index");
 <br>
 <br>
 
+
+### Fixe number
 <code>
     var user_fixe_number = "20 30 09 09";
 </code>
