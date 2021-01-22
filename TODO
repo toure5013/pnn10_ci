@@ -1,3 +1,15 @@
 
 
 NUMERO FIXE (régarder le 3eme )
+
+-MOOV
+    - debute par 2 et le 3eme chiffre est 8 = [2]{1}[0-9]{1}[8]{1}[0-9]+
+
+-MTN
+    - Troisième chiffre à 0 :  [3]{1}[0-9]{1}[0]{1}[0-9]+
+
+-ORANGE
+    - 3 eme chiffre 2,3,4,5,6,7,9 : [1-9]{1}[0-9]{1}[2345679]{1}[0-9]+
+    - pour le cas ou le 3eme chiffre est 8 le premier chiffre est 3 : [3]{1}[0-9]{1}[8]{1}[0-9]+
+
+
