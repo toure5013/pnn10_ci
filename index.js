@@ -1,6 +1,6 @@
 class Pnn10class {
 
-      pnn10(user_number) {
+    phone_number(user_number) {
         var is_number_valid = false;
         var reguex_ivory_coast_number = /^(\(+225\)|\+225|00225|225|)[0-9]{8}$/
         var reg_orange = /^\d{1}[7-9]{1}\d{6}$/;
@@ -8,7 +8,7 @@ class Pnn10class {
         var reg_moov = /^\d{1}[1-3]{1}\d{6}$/;
 
 
-        
+
         //convert to string
         var user_number_string = user_number.toString();
 

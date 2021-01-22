@@ -8,4 +8,6 @@ const pnn10 =  require("./index");
  * (00225)xxxxxxxx
  * (00225)xxxxxxxx
  */
-var converted_number = await pnn10.pnn10("(+225) 44 17 56 31");
+var converted_number = await pnn10.phone_number("(+225) 44 17 56 31");
+
+var converted_number = await pnn10.fixe_number("(+225) 44 17 56 31");
