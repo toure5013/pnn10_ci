@@ -1,6 +1,6 @@
 {
   "name": "pnn10_ci",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The number can be this format  * xxxxxxxx  * +225xxxxxxxx  * (+225)xxxxxxxx  * (00225)xxxxxxxx  * (00225)xxxxxxxx",
   "main": "index.js",
   "directories": {
