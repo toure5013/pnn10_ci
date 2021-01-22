@@ -1,24 +1,23 @@
 {
-  "name": "@toure5013/pnn10_ci",
+  "name": "pnn10_ci",
   "version": "1.0.0",
   "description": "The number can be this format  * xxxxxxxx  * +225xxxxxxxx  * (+225)xxxxxxxx  * (00225)xxxxxxxx  * (00225)xxxxxxxx",
   "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toure5013/pnn10_ci.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/toure5013/pnn10_ci/issues"
   },
   "homepage": "https://github.com/toure5013/pnn10_ci#readme",
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
