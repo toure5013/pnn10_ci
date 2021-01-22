@@ -1,8 +1,8 @@
 ## PNN10
 
-### Mobile phone number
+### Mobile phone number  (with - or . or space) :
 
-The number can be this format (with - or . or space) :
+The number can be this format
 
 - xxxxxxxx
 - +225xxxxxxxx
