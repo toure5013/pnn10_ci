@@ -2,7 +2,7 @@
 
 ### Mobile phone number
 
-The number can be this format
+The number can be this format (with - or . or space) :
 
 - xxxxxxxx
 - +225xxxxxxxx
@@ -28,7 +28,13 @@ const pnn10 =  require("./index");
 <br>
 
 
-### Fixe number
+### Fixe number (with - or . or space) :
+
+- xxxxxxxx
+- +225xxxxxxxx
+- (+225)xxxxxxxx
+- (00225)xxxxxxxx
+- (00225)xxxxxxxx
 <code>
     var user_fixe_number = "20 30 09 09";
 </code>
