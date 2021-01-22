@@ -101,7 +101,7 @@ class Pnn10class {
             if (is_number_valid) {
                 return {
                     error: false,
-                    message: "Le numéro " + user_number_string + " est numéro " + type_network + " valid  ✅",
+                    message: "Le numéro " + user_number_string + " est un numéro " + type_network + " valid  ✅",
                     type_network,
                     number_converted_national: number_converted_national,
                     number_converted_international: number_converted_international
@@ -221,7 +221,7 @@ class Pnn10class {
             if (is_number_valid) {
                 return {
                     error: false,
-                    message: "Le numéro " + user_number_string + " est numéro " + type_network + " valid  ✅",
+                    message: "Le numéro " + user_number_string + " est un numéro " + type_network + " valid  ✅",
                     type_network,
                     number_converted_national: number_converted_national,
                     number_converted_international: number_converted_international
