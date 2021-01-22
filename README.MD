@@ -69,8 +69,8 @@ console.log(converted_fixe_number);
 
 ## Example 
 
-<img src="./example/screenshot" style="width:100%">
+<img src="./example/screenshot.png" style="width:100%">
 
 <br>
 
-<img src="./example/screenshot" style="width:100%">
+<img src="./example/example_logique.jpg" style="width:100%">
