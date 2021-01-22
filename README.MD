@@ -4,21 +4,23 @@
 
 <img src="./example/screenshot.png" style="width:100%">
 
-### Install the module
+#####  1. Install the module   ✅
+
 <code>
  <i> npm i pnn10_ci </i>
 <code>
 
 <br>
-###  Require the module 
 
+####  2. Require the module  ✅
 <code>
 const pnn10 =  require("pnn10_ci");
 </code>
 
-<br>
 
-### Mobile phone number  (with - or . or space) :
+#### 3. Enjoy 💫
+
+##### 🤳 Mobile phone number  (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
 
@@ -54,7 +56,7 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 <br>
 
 
-### Fixe number (with - or . or space) :
+##### 📞 Fixe number (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
 
@@ -88,7 +90,7 @@ console.log(converted_fixe_number);
 <br>
 <br>
 
-### For both fixe number Or mobile Number (with - or . or space) :
+#####  🤳|📞 For both fixe number Or mobile Number (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
 
@@ -119,15 +121,9 @@ var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_numb
 console.log(converted_both_phone_number_fixe_number);
 </code>
 
-
-
-<br>
-
-
-<br>
 <br>
 <br>
 
 
-### How to do : 
+##### Why to use this module : 
 <img src="./example/example_logique.jpg" style="width:100%">
