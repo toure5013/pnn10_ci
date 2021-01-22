@@ -22,4 +22,6 @@ const pnn10 =  require("./index");
     var converted_number = pnn10.phone_number(number);
 </code>
 <br>
-<img src="/example/example_logique.jpg">
+<br>
+<br>
+<img src="/example/example_logique.jpg" style="width:100%">
