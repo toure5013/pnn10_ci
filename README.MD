@@ -47,6 +47,9 @@ console.log(converted_fixe_number);
 
 <br>
 <br>
+## Example 
+<img src="/example/screenshot" style="width:100%">
+
 <br>
 <br>
-<img src="/example/example_logique.jpg" style="width:100%">
+<img src="/example/screenshot" style="width:100%">

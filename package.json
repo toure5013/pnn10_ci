@@ -1,5 +1,5 @@
 {
-  "name": "pnn10_ci",
+  "name": "@toure5013/pnn10_ci",
   "version": "1.0.0",
   "description": "The number can be this format  * xxxxxxxx  * +225xxxxxxxx  * (+225)xxxxxxxx  * (00225)xxxxxxxx  * (00225)xxxxxxxx",
   "main": "index.js",
