@@ -8,7 +8,16 @@ The number can be this format
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-- (00225)xxxxxxxx
+  
+- xx.xx.xx.xx
+- (+225)xx.xx.xx.xx
+- +225xx.xx.xx.xx
+
+- xx xx xx xx
+- (+225)xx xx xx xx
+- +225 xx xx xx xx
+  
+NB 📣 : all of this number ⬆️ work with space or . or -
 
 <code>
 const pnn10 =  require("./index");
@@ -34,7 +43,17 @@ const pnn10 =  require("./index");
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-- (00225)xxxxxxxx
+  
+- xx.xx.xx.xx
+- (+225)xx.xx.xx.xx
+- +225xx.xx.xx.xx
+
+- xx xx xx xx
+- (+225)xx xx xx xx
+- +225 xx xx xx xx
+  
+NB 📣 : all of this number ⬆️ work with space or . or - 
+
 <code>
     var user_fixe_number = "20 30 09 09";
 </code>
