@@ -39,7 +39,10 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 <br>
 
 <code>
-    var converted_number = pnn10.phone_number(number);
+    var converted_mobile_number = pnn10.phone_number(number);
+    <br>
+    <br>
+    console.log(converted_mobile_number);
 </code>
 <br>
 <br>
@@ -76,6 +79,8 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
 var converted_fixe_number =  pnn10.fixe_number(user_fixe_number);
+<br>
+<br>
 console.log(converted_fixe_number);
 </code>`
 
@@ -113,6 +118,8 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
 var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_number(unknow_type_number);
+<br>
+<br>
 console.log(converted_both_phone_number_fixe_number);
 </code>
 
