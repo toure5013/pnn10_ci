@@ -1,12 +1,12 @@
 ## PNN10
 
-  The number can be this format
- * xxxxxxxx
- * +225xxxxxxxx
- * (+225)xxxxxxxx
- * (00225)xxxxxxxx
- * (00225)xxxxxxxx
+The number can be this format
 
+- xxxxxxxx
+- +225xxxxxxxx
+- (+225)xxxxxxxx
+- (00225)xxxxxxxx
+- (00225)xxxxxxxx
 
 <code>
 const pnn10 =  require("./index");
@@ -24,18 +24,19 @@ const pnn10 =  require("./index");
 </code>
 <br>
 <br>
-<br>
-<img src="/example/example_logique.jpg" style="width:100%">
-
-
-<br>
-<br>
 
 <code>
     var user_fixe_number = "20 30 09 09";
 </code>
 <br>
+
 <code>
 var converted_fixe_number =  pnn10.fixe_number(user_fixe_number);
 console.log(converted_fixe_number);
-</code>
+</code>`
+
+<br>
+<br>
+<br>
+<br>
+<img src="/example/example_logique.jpg" style="width:100%">
