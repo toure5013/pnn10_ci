@@ -1,12 +1,22 @@
 ## PNN10
 
+## Example 
+
+<img src="./example/screenshot.png" style="width:100%">
+
+### Install the module
+<code>
+ <i> npm i pnn10_ci </i>
+<code>
+
+<br>
 ###  Require the module 
 
 <code>
-const pnn10 =  require("./index");
+const pnn10 =  require("pnn10_ci");
 </code>
 
-****<br>
+<br>
 
 ### Mobile phone number  (with - or . or space) :
 
@@ -17,12 +27,10 @@ The number can be this format (and variations with . or , or - space)
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
 <br>
-<br>
   
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
-<br>
 <br>
 
 - xx xx xx xx
@@ -36,11 +44,9 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
     var number = "(+225) 44 17 56 31";
 </code>
 <br>
-<br>
 
 <code>
     var converted_mobile_number = pnn10.phone_number(number);
-    <br>
     <br>
     console.log(converted_mobile_number);
 </code>
@@ -57,14 +63,10 @@ The number can be this format (and variations with . or , or - space)
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
 <br>
-<br>
-  
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
 <br>
-<br>
-
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
@@ -79,7 +81,6 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
 var converted_fixe_number =  pnn10.fixe_number(user_fixe_number);
-<br>
 <br>
 console.log(converted_fixe_number);
 </code>`
@@ -96,14 +97,10 @@ The number can be this format (and variations with . or , or - space)
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
 <br>
-<br>
-  
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
 <br>
-<br>
-
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
@@ -119,7 +116,6 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 <code>
 var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_number(unknow_type_number);
 <br>
-<br>
 console.log(converted_both_phone_number_fixe_number);
 </code>
 
@@ -127,9 +123,6 @@ console.log(converted_both_phone_number_fixe_number);
 
 <br>
 
-## Example 
-
-<img src="./example/screenshot.png" style="width:100%">
 
 <br>
 <br>
