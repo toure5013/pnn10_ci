@@ -21,6 +21,3 @@ const pnn10 =  require("./index");
 <code>
     var converted_number = await pnn10.phone_number(number);
 </code>
-
-
-
