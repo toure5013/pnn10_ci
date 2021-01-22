@@ -9,6 +9,9 @@
 
 
 <code>
+const pnn10 =  require("./index");
+
+
 var number = "(+225) 44 17 56 31"
-var converted_number = await pnn10.pnn10(number);
+var converted_number = await pnn10.phone_number(number);
 </code>
