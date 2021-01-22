@@ -133,6 +133,15 @@ class Pnn10class {
             }
         }
     }
+    fixe_number(user_number){
+        return {
+            error: false,
+            message: "come soon",
+            type_network,
+            number_converted_national,
+            number_converted_international
+        }
+    }
 }
 
 
