@@ -46,6 +46,7 @@ class Pnn10class {
             var user_number_height_caracter = [];
             var caracter_to_delete;
             if (is_number_valid) {
+                // change by regex
                 for (var i = 0; i < user_number_string_length; i++) {
                     if (i >= number_of_caracter_to_delete) {
                         user_number_height_caracter.push(user_number_string[i]);
