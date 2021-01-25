@@ -12,7 +12,7 @@ class Pnn10class {
         var user_number_string = user_number.toString();
 
         //clean the data by removing (. , - espace)
-        var clean_regex = /[.\-*\(\) ]+/;
+        var clean_regex = /[.\-*\(\), ]+/;
 
         while (user_number_string.match(clean_regex)) {
             user_number_string = user_number_string.replace(clean_regex, "")
@@ -136,7 +136,7 @@ class Pnn10class {
         var user_number_string = user_number.toString();
 
         //clean the data by removing (. , - espace)
-        var clean_regex = /[.\-*\(\) ]+/;
+        var clean_regex = /[.\-*\(\), ]+/;
         while (user_number_string.match(clean_regex)) {
             user_number_string = user_number_string.replace(clean_regex, "")
         }
@@ -256,7 +256,7 @@ class Pnn10class {
         var user_number_string = user_number.toString();
 
         //clean the data by removing (. , - espace)
-        var clean_regex = /[.\-*\(\) ]+/;
+        var clean_regex = /[.\-*\(\), ]+/;
         while (user_number_string.match(clean_regex)) {
             user_number_string = user_number_string.replace(clean_regex, "")
         }

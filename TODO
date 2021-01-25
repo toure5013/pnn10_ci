@@ -1,15 +1,36 @@
 
 
 NUMERO FIXE (régarder le 3eme )
-
--MOOV
+- MOOV
     - debute par 2 et le 3eme chiffre est 8 = [2]{1}[0-9]{1}[8]{1}[0-9]+
 
--MTN
+- MTN
     - Troisième chiffre à 0 :  [3]{1}[0-9]{1}[0]{1}[0-9]+
 
--ORANGE
+- ORANGE
     - 3 eme chiffre 2,3,4,5,6,7,9 : [1-9]{1}[0-9]{1}[2345679]{1}[0-9]+
     - pour le cas ou le 3eme chiffre est 8 le premier chiffre est 3 : [3]{1}[0-9]{1}[8]{1}[0-9]+
 
 
+
+
+NUMERO MOBILE (se baser sur le deuxième chiffre) 
+- MOOV
+    - le 3eme chiffre est compris entre [1-3]
+
+- MTN
+    - le 3eme chiffre est compris entre [4-6]
+
+
+- ORANGE
+    - le 3eme chiffre est compris entre [7-9]
+
+
+
+NB : 
+    - dans un premier temps récuperer le numero de l'utilidateur
+    - appliquer un regex pour enléver les caravtères [(,.)- ]
+    - Verifier qu'il sagit d'un numéro valid
+    - Trouver l'operateur
+    - Appliquer la réglementation de la numérotation
+    - Retourner les données à l'utilisateur
