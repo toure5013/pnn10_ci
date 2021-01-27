@@ -175,3 +175,7 @@ var rollback_result_pnn8 = pnn10.rollback(pnn10_number)
 <br>
 console.log(rollback_result_pnn8);
 </code>
+<br>
+<br>
+<img src="./example/rollback.png" style="width:100%">
+
