@@ -355,7 +355,7 @@ class Pnn10class {
                 error: false,
                 message: "💫💫💫💫will come soon💫💫💫💫",
                 type_network : "💫💫💫💫", 
-                number_converted_national = "💫💫💫💫",
+                number_converted_national : "💫💫💫💫",
                 number_converted_international : "💫💫💫💫"
             }
     }
