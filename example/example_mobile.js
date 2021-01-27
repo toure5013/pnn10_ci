@@ -80,6 +80,26 @@ var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_numb
  console.log(converted_both_phone_number_fixe_number);
 
 
+
+
+
+/**
+ * ROLLBACK :::::: For both fixe number Or mobile Number (with - or . or space) :
+- xxxxxxxx
+- +225xxxxxxxxxx
+- (+225)xxxxxxxxxx
+- (00225)xxxxxxxxxx
+  
+- xx.xx.xx.xx.xx
+- (+225)xx.xx.xx.xx.xx
+- +225xx.xx.xx.xx.xx
+
+- xx xx xx xx xx
+- (+225)xx xx xx xx xx
+- +225 xx xx xx xx xx
+
+ */
+
 var pnn10_number = "+2250708175631"
 var rollback_result = pnn10.rollback(pnn10_number)
 console.log(rollback_result);
