@@ -75,6 +75,6 @@ var converted_fixe_number =  pnn10.fixe_number("20 30 09 09");
 // let usernumber = "08-17-56-31";
 // let usernumber = "08.17.56.31";
 // let usernumber = "08 17 56 31";
-let usernumber = "41234322";
+let usernumber = "20077643";
 var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_number(usernumber);
 console.log(converted_both_phone_number_fixe_number);

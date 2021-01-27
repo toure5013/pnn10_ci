@@ -201,7 +201,7 @@ class Pnn10class {
                 number_converted_national = "25" + user_final_number
                 number_converted_international = "+22525" + user_final_number
             }
-            if (reg_orange_1.test(user_final_number)) {
+            else if (reg_orange_1.test(user_final_number)) {
                 //Un numéro Orange
                 type_network = "Orange"
                 number_converted_national = "27" + user_final_number
@@ -228,6 +228,14 @@ class Pnn10class {
                     numer_type: "fixe",
                     number_converted_national: number_converted_national,
                     number_converted_international: number_converted_international
+                }
+            }else{
+                return {
+                    error: true,
+                    message: "🛑  Le numéro " + user_number_string + ", n'est pas un numéro valid",
+                    type_network,
+                    number_converted_national,
+                    number_converted_international
                 }
             }
 
@@ -297,8 +305,10 @@ class Pnn10class {
                 user_final_number = user_number_string.replace(caracter_to_delete, "");
             }
         } else if (user_number_string.length == 8) {
+            console.log(user_number_string)
             // console.log("Numero valid  ✅  à  8️⃣  chiffre")
             user_final_number = user_number_string.toString();
+            console.log(user_final_number);
             is_number_valid = true;
 
         } else {
@@ -314,10 +324,13 @@ class Pnn10class {
             //we check here if it's fixed fphone number or mobile phone number
             var regex_fixe_number = /^[2-3]{1}[0-9]{7}$/
             var is_fixe_number = regex_fixe_number.test(user_number_string);
-            var final_result = ""
+            console.log(is_fixe_number);
+            var final_result;
             if(is_fixe_number){
                  // console.log("Numero valid  ✅  à  8️⃣  chiffre et de type fixe")
                  final_result = this.fixe_number(user_number_string);
+                 console.log(this.fixe_number(user_number_string));
+                 
             }else{
                  // console.log("Numero valid  ✅  à  8️⃣  chiffre et de type mobile")
                 final_result = this.phone_number(user_number_string);
