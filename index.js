@@ -420,7 +420,7 @@ class Pnn10class {
             is_number_valid = false;
         }
 
-        
+
         if (is_number_valid) {
             var user_rollback_number = "";
             var number_carac_delete_when_rollback = ""
@@ -442,18 +442,26 @@ class Pnn10class {
             }
 
             var number_type = "";
-            // console.log(number_carac_delete_when_rollback);
-            
-            //Appliquer les reguex pour trouver l'operateur
+            var reg_orange_mobilepnn8 = /^\d{1}[7-9]{1}\d{6}$/;
+            var reg_mtn_mobilepnn8 = /^\d{1}[4-6]{1}\d{6}$/;
+            var reg_moov_mobilepnn8 = /^\d{1}[1-3]{1}\d{6}$/;
 
-            if (reg_orange.test(user_final_number)) {
-                if (number_carac_delete_when_rollback == "07") {
+            var reg_orange_fixepnn8 = /^[3]{1}[0-9]{1}[8]{1}[0-9]+$/;
+            var reg_orange_fixepnn8_1 = /^[3]{1}[0-9]{1}[0]{1}[0-9]+$/;
+            var reg_mtn_fixepnn8 = /^[1-9]{1}[0-9]{1}[2345679]{1}[0-9]+$/;
+            var reg_moov_fixepnn8 = /^[2]{1}[0-9]{1}[8]{1}[0-9]+$/;
+
+            // console.log(number_carac_delete_when_rollback);
+            //appliquer regex pour verifier la validider du numéro après converstion pnn10
+
+            if (reg_orange.test(user_final_number) && (number_carac_delete_when_rollback == "07" || number_carac_delete_when_rollback == "27")) {
+                if (number_carac_delete_when_rollback == "07" && reg_orange_mobilepnn8.test(user_rollback_number)) {
                     //Un numéro Orange
                     type_network = "Orange";
                     number_type = "Mobile"
                     number_converted_national = user_rollback_number
                     number_converted_international = "+225" + user_rollback_number
-                } else if ( number_carac_delete_when_rollback == "27" ) {
+                } else if (number_carac_delete_when_rollback == "27" &&  (reg_orange_fixepnn8.test(user_rollback_number) ||  reg_orange_fixepnn8_1.test(user_rollback_number))) {
                     //Un numéro Orange
                     type_network = "Orange";
                     number_type = "fixe"
@@ -462,33 +470,35 @@ class Pnn10class {
                 } else {
                     is_number_valid = false;
                 }
-            } else if (reg_mtn.test(user_final_number)) {
-                if (number_carac_delete_when_rollback == "05" ) {
+            } else if (reg_mtn.test(user_final_number) && (number_carac_delete_when_rollback == "05" || number_carac_delete_when_rollback == "25")) {
+                console.log(user_rollback_number);
+
+                if (number_carac_delete_when_rollback == "05" && reg_mtn_mobilepnn8.test(user_rollback_number)) {
                     //Un numéro MTN
                     type_network = "MTN"
                     number_type = "Mobile"
                     number_converted_national = user_rollback_number
                     number_converted_international = "+225" + user_rollback_number
-                } else if (number_carac_delete_when_rollback == "25" ) {
+                } else if (number_carac_delete_when_rollback == "25" && reg_mtn_fixepnn8.test(user_rollback_number)) {
                     //Un numéro MTN
                     type_network = "MTN"
                     number_type = "fixe"
                     number_converted_national = user_rollback_number
                     number_converted_international = "+225" + user_rollback_number
-                }else {
+                } else {
                     is_number_valid = false;
                 }
-            } else if (reg_moov.test(user_final_number)) {
-                if (number_carac_delete_when_rollback == "01" ) {
+            } else if (reg_moov.test(user_final_number) && (number_carac_delete_when_rollback == "01" || number_carac_delete_when_rollback == "21")) {
+                if (number_carac_delete_when_rollback == "01" && reg_moov_mobilepnn8.test(user_rollback_number)) {
                     //Un numéro MOOV
                     type_network = "MOOV"
-                    number_type =  "Mobile"
+                    number_type = "Mobile"
                     number_converted_national = user_rollback_number
                     number_converted_international = "+225" + user_rollback_number
-                } else if ( number_carac_delete_when_rollback != "21" ) {
+                } else if (number_carac_delete_when_rollback != "21" && reg_moov_fixepnn8.test(user_rollback_number)) {
                     //Un numéro MOOV
                     type_network = "MOOV"
-                    number_type =  "fixe"
+                    number_type = "fixe"
                     number_converted_national = user_rollback_number
                     number_converted_international = "+225" + user_rollback_number
                 } else {
@@ -501,7 +511,7 @@ class Pnn10class {
 
 
             // console.log(is_number_valid);
-            
+
             if (is_number_valid) {
                 return {
                     error: false,
@@ -516,8 +526,8 @@ class Pnn10class {
                     error: true,
                     message: "🛑  Le numéro " + user_number_string + ", n'est pas un numéro valid",
                     type_network,
-                    number_converted_national,
-                    number_converted_international
+                    number_converted_national: "",
+                    number_converted_international: ""
                 }
             }
 
