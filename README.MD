@@ -1,10 +1,10 @@
 ## PNN10
 
-## Example 
+## Example
 
 <img src="./example/screenshot.png" style="width:100%">
 
-#####  1. Install the module   ✅
+##### 1. Install the module ✅
 
 <code>
  <i> npm i pnn10_ci </i>
@@ -13,16 +13,15 @@
 <br>
 <br>
 
-####  2. Require the module  ✅
+#### 2. Require the module ✅
 
 <code>
 const pnn10 =  require("pnn10_ci");
 </code>
 
-
 #### 3. Enjoy 💫
 
-##### 🤳 Mobile phone number  (with - or . or space) :
+##### 🤳 Mobile phone number (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
 
@@ -30,19 +29,17 @@ The number can be this format (and variations with . or , or - space)
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-<br>
-  
+  <br>
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
-<br>
+  <br>
 
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
-  
-NB 📣 : all of this number ⬆️ work with space or . or - or , 
 
+NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
     var number = "(+225) 44 17 56 31";
@@ -57,11 +54,9 @@ NB 📣 : all of this number ⬆️ work with space or . or - or ,
 <br>
 <br>
 
-
 ##### 📞 Fixe number (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
-
 
 The number can be this format (and variations with . or , or - space)
 
@@ -69,18 +64,17 @@ The number can be this format (and variations with . or , or - space)
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-<br>
-  
+  <br>
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
-<br>
+  <br>
 
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
-  
-NB 📣 : all of this number ⬆️ work with space or . or - or , 
+
+NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
     var user_fixe_number = "20 30 09 09";
@@ -96,7 +90,7 @@ console.log(converted_fixe_number);
 <br>
 <br>
 
-#####  🤳|📞 For both fixe number Or mobile Number (with - or . or space) :
+##### 🤳|📞 For both fixe number Or mobile Number (with - or . or space) :
 
 The number can be this format (and variations with . or , or - space)
 
@@ -104,18 +98,17 @@ The number can be this format (and variations with . or , or - space)
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-<br>
-  
+  <br>
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
-<br>
+  <br>
 
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225 xx xx xx xx
-  
-NB 📣 : all of this number ⬆️ work with space or . or - or , 
+
+NB 📣 : all of this number ⬆️ work with space or . or - or ,
 
 <code>
     var unknow_type_number = "20 30 09 09";
@@ -130,23 +123,55 @@ console.log(converted_both_phone_number_fixe_number);
 <br>
 <br>
 
-#### 4.Number type  : 
+#### 4.Number type :
+
 - xxxxxxxx
 - +225xxxxxxxx
 - (+225)xxxxxxxx
 - (00225)xxxxxxxx
-<br>
-  
+  <br>
 - xx.xx.xx.xx
 - (+225)xx.xx.xx.xx
 - +225xx.xx.xx.xx
-<br>
+  <br>
 
 - xx xx xx xx
 - (+225)xx xx xx xx
 - +225xx xx xx xx
+  <br>
+
+##### Why to use this module :
+
+<img src="./example/example_logique.jpg" style="width:100%">
+
+<br>
 <br>
 
+##### 🤳|📞 ROLLBACK (pnn10 to pnn8):::: For both fixe number Or mobile Number (with - or . or space) :
 
-##### Why to use this module : 
-<img src="./example/example_logique.jpg" style="width:100%">
+The number can be this format (and variations with . or , or - space)
+
+- xxxxxxxx
+- +225xxxxxxxxxx
+- (+225)xxxxxxxxxx
+- (00225)xxxxxxxxxx
+- xx.xx.xx.xx.xx
+- (+225)xx.xx.xx.xx.xx
+- +225xx.xx.xx.xx.xx
+
+- xx xx xx xx xx
+- (+225)xx xx xx xx xx
+- +225 xx xx xx xx xx
+
+NB 📣 : all of this number ⬆️ work with space or . or - or ,
+
+<code>
+  var pnn10_number = "+2250708175631"
+</code>
+<br>
+
+<code>
+var rollback_result_pnn8 = pnn10.rollback(pnn10_number)
+<br>
+console.log(rollback_result_pnn8);
+</code>
