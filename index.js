@@ -348,6 +348,17 @@ class Pnn10class {
         }
 
     }
+
+
+    rollback(){
+            return {
+                error: false,
+                message: "💫💫💫💫will come soon💫💫💫💫",
+                type_network : "💫💫💫💫", 
+                number_converted_national = "💫💫💫💫",
+                number_converted_international : "💫💫💫💫"
+            }
+    }
 }
 
 
