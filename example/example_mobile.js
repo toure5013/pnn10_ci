@@ -75,6 +75,12 @@ var converted_fixe_number =  pnn10.fixe_number("20 30 09 09");
 // let usernumber = "08-17-56-31";
 // let usernumber = "08.17.56.31";
 // let usernumber = "08 17 56 31";
-let usernumber = "20077643";
-var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_number(usernumber);
-console.log(converted_both_phone_number_fixe_number);
+let usernumber_pnn8 = "20077643";
+var converted_both_phone_number_fixe_number =  pnn10.both_phone_number_fixe_number(usernumber_pnn8);
+ console.log(converted_both_phone_number_fixe_number);
+
+
+var pnn10_number = "2744334233"
+var rollback_result = pnn10.rollback(pnn10_number)
+console.log(rollback_result);
+
