@@ -108,8 +108,15 @@ class Pnn10class {
                     number_converted_national: number_converted_national,
                     number_converted_international: number_converted_international
                 }
+            }else {
+                return {
+                    error: true,
+                    message: "🛑  Le numéro " + user_number_string + ", n'est pas un numéro valid",
+                    type_network,
+                    number_converted_national,
+                    number_converted_international
+                }
             }
-
         } else {
             return {
                 error: true,
